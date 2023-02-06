@@ -1,61 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
     <body>
         <div id="earth"></div>
         <div id="sun"></div>
-    </body>   
-<style>
-    body {  background-image: url('https://w7.pngwing.com/pngs/691/438/png-transparent-desktop-blue-space-nebula-space-texture-blue-atmosphere.png');
-}
-    #earth {
-        background-image: url('https://upload.wikimedia.org/wikipedia/it/e/eb/Continenti_con_i_confini_degli_stati.png');
-        width: 80px;
-        height: 80px;
-        background-size: 200px;
-        margin: 90px auto;
-        border-radius: 50%;
-        position: relative;
-        animation-name: move,scale,rotate;
-        animation-duration: 4s,4s,4s;
-        animation-iteration-count: infinite,infinite,infinite;
-    }
-    #sun {
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAG1BMVEX/zADa183y8e//+en/yQD/+efp5+H/////xQCaMLYCAAABJ0lEQVR4nO3PiQ2DQBAAMQIc0H/FeZQmZmV34O013fa69smuz3C/1zHVuvfvcD3nVM/6DY9zm+o8DOsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7/sP1nFM96ze81zHVur/Da5/s+gynewNk0iKhpCd4kAAAAABJRU5ErkJggg==');
-        width: 100px;
-        height: 100px;
-        background-size: 300px;
-        margin: 90px auto;
-        border-radius: 50%;
-        position: 0,200;
-        
-    }
-    @keyframes move {
-        0%   { left: 250px;  }
-        70%  { left: -250px; }
-        100% { left: 250px;  }
-    }
+    </body>
+    <style>
+        body {
+            background-image: url('https://w7.pngwing.com/pngs/691/438/png-transparent-desktop-blue-space-nebula-space-texture-blue-atmosphere.png');
+            background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+        }
 
-    @keyframes scale {
-        0%  { transform: scale(1);   }
-        32% { transform: scale(0.4); animation-timing-function:  ease-in; }
-        70% { transform: scale(1); animation-timing-function:  ease-in;  }
-        75% { transform: scale(1.2);  animation-timing-function:  ease-in-out; }
-        86% { transform: scale(2);  }
-        98% { transform: scale(1.2); }
-        100%{ transform: scale(1); }
-    }
+        #earth {
+            background-image: url('https://upload.wikimedia.org/wikipedia/it/e/eb/Continenti_con_i_confini_degli_stati.png');
+            width: 80px;
+            height: 80px;
+            background-size: 200px;
+            margin: 90px auto;
+            border-radius: 50%;
+            position: relative;
+            animation-name: move, scale, rotate;
+            animation-duration: 4s, 4s, 4s;
+            animation-iteration-count: infinite, infinite, infinite;
+        }
 
-    @keyframes rotate {
-        0% { background-position: 0px; }
-        100% { background-position: 190px; }
-    }
-</style>
+        #sun {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAG1BMVEX/zADa183y8e//+en/yQD/+efp5+H/////xQCaMLYCAAABJ0lEQVR4nO3PiQ2DQBAAMQIc0H/FeZQmZmV34O013fa69smuz3C/1zHVuvfvcD3nVM/6DY9zm+o8DOsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7DPsM+wz7/sP1nFM96ze81zHVur/Da5/s+gynewNk0iKhpCd4kAAAAABJRU5ErkJggg==');
+            width: 100px;
+            height: 100px;
+            background-size: 300px;
+            margin: 90px auto;
+            border-radius: 50%;
+            position: 0, 200;
+
+        }
+
+        @keyframes move {
+            0% {
+                left: 250px;
+            }
+
+            70% {
+                left: -250px;
+            }
+
+            100% {
+                left: 250px;
+            }
+        }
+
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+
+            32% {
+                transform: scale(0.4);
+                animation-timing-function: ease-in;
+            }
+
+            70% {
+                transform: scale(1);
+                animation-timing-function: ease-in;
+            }
+
+            75% {
+                transform: scale(1.2);
+                animation-timing-function: ease-in-out;
+            }
+
+            86% {
+                transform: scale(2);
+            }
+
+            98% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                background-position: 0px;
+            }
+
+            100% {
+                background-position: 190px;
+            }
+        }
+    </style>
 </body>
+
 </html>
